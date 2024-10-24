@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Med Dataflow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        Med Dataflow
+    </header>
+
+    <!-- Main content -->
+    <div class="container">
+        <h1>Welcome to Med Dataflow</h1>
+        <p>Your trusted platform for managing medical data efficiently.</p>
+
+        <!-- Buttons for login options -->
+        <button class="login-btn" id="userLoginBtn">User Login</button>
+        <button class="login-btn" id="adminLoginBtn">Hospital Admin Login</button>
+    </div>
+
+    <!-- User Login Modal -->
+    <div id="userLoginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeUserModal">&times;</span>
+            <h2>User Login</h2>
+            <input type="text" id="userId" placeholder="User ID" required>
+            <input type="password" id="userPassword" placeholder="Password" required>
+            <button onclick="loginUser()">Login</button>
+            <p><a href="#">Sign Up</a> | <a href="#">Forgot Password?</a></p>
+        </div>
+    </div>
+
+    <!-- Hospital Admin Login Modal -->
+    <div id="adminLoginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeAdminModal">&times;</span>
+            <h2>Hospital Admin Login</h2>
+            <input type="number" id="uidaiNumber" placeholder="UIDAI Number" required>
+            <button onclick="loginAdmin()">Login</button>
+            <p><a href="#">Sign Up</a> | <a href="#">Forgot Password?</a></p>
+        </div>
+    </div>
+
+    <!-- Footer section -->
+    <footer>
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>Email: info@meddataflow.com</p>
+            <p>Phone: +123 456 7890</p>
+
+            <div class="social-icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <h3>Useful Links</h3>
+            <a href="#">Privacy Policy</a><br>
+            <a href="#">Terms & Conditions</a><br>
+            <a href="#">FAQs</a>
+        </div>
+
+        <div class="footer-section">
+            <h3>Support</h3>
+            <a href="#">Contact Support</a><br>
+            <a href="#">Help Center</a>
+        </div>
+    </footer>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
